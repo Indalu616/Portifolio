@@ -1,581 +1,604 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indalu Portifolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="web-removed.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="web-removed.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            background-color: #fafafa;
-            margin: 0;
-            padding: 0;
-            overscroll-behavior: none;
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+        overscroll-behavior: none;
+      }
+      .whisper-regular {
+        font-family: "Whisper", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-        }
-        .whisper-regular {
-  font-family: "Whisper", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-        .container{
-            background-color: white;
-            width: 40%;
-            margin: 30px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 4px #f5f5f5, -2px -2px 4px #f5f5f5;
-        }
-        .about img{
-            border-radius: 8px;
-        }
-        .about{
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
-        }
-#btn{
-    height: 40px;
-    width:100px;
-    text-align: center;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: blue;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#btn:hover{
-    background-color: white;
-    color: black;
-}
-#btn-2{
-    font-family: 'Times New Roman', Times, serif;
-    padding: 10px 20px 10px 20px;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    font-weight: bold;
-    font-size: 17px;
-    cursor: pointer;
-    background-color: white;
-    box-shadow: 2px 2px 2px #f5f5f5, -2px -2px 2px #f5f5f5;
-   
-}
-#btn-2:hover{
-    box-shadow: 2px 2px 3px #f5f5f5, -2px -2px 3px #f5f5f5;
-    color: rgb(24, 3, 3);
-    background-color: red;
-   
-}
-.container p{
-    color: rgb(104, 100, 100);
-    font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-span{
-    display: block;
-    font-size: 16px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    cursor: pointer;
-}
-.all-container{
-    display: flex;
-    width: 80%;
-    margin: 40px auto;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-}
-@media(max-width:678px){
-    .all-container{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin-top: 40px;
-    }
-    .about{
+      .container {
+        background-color: white;
+        width: 40%;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px hsl(0, 0%, 96%), -2px -2px 4px #f5f5f5;
+      }
+      .about img {
+        border-radius: 8px;
+      }
+      .about {
         display: flex;
         align-items: center;
-    }
-    .container{
-        width: 100%;
-        padding: 10px;
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .skill-section{
         margin-bottom: 20px;
+      }
+      #btn {
+        height: 40px;
+        width: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: blue;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #btn:hover {
+        background-color: white;
+        color: black;
+      }
+      #btn-2 {
+        font-family: "Times New Roman", Times, serif;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 17px;
+        cursor: pointer;
+        background-color: white;
+        box-shadow: 2px 2px 2px #f5f5f5, -2px -2px 2px #f5f5f5;
+      }
+      #btn-2:hover {
+        box-shadow: 2px 2px 3px #f5f5f5, -2px -2px 3px #f5f5f5;
+        color: rgb(24, 3, 3);
+        background-color: red;
+      }
+      .container p {
+        color: rgb(104, 100, 100);
+        font-size: large;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-    }
-    .main-services{
+      span {
+        display: block;
+        font-size: 16px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .all-container {
+        display: flex;
+        width: 80%;
+        margin: 40px auto;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+      }
+      @media (max-width: 678px) {
+        .all-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-top: 40px;
+        }
+        .about {
+          display: flex;
+          align-items: center;
+        }
+        .container {
+          width: 100%;
+          padding: 10px;
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+        }
+        .skill-section {
+          margin-bottom: 20px;
+        }
+        .main-services {
+          flex-direction: column;
+          justify-content: center;
+        }
+        #design {
+          width: 100%;
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-start;
+          display: none;
+        }
+        nav {
+          display: flex;
+          flex-direction: column;
+        }
+        .hero {
+          margin-top: 500px;
+        }
+        .about {
+          display: flex;
+          flex-direction: column;
+        }
+        #menu {
+          margin-left: 0px;
+          display: block;
+        }
+        .menu-bar {
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+      nav {
+        background-color: black;
+        width: 100%;
+        color: white;
+        display: flex;
+        position: fixed;
+        top: 0;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+      }
+      .links {
+        display: flex;
+        padding: 0px 10px 0px 10px;
+      }
+      .links li {
+        padding: 10px;
+      }
+      .links li a {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      .links li a:hover {
+        border-bottom: 2px solid white;
+        padding: 8px;
+        border-radius: 6px;
+        background-color: red;
+      }
+      .hero {
+        width: 100%;
+        min-height: 400px;
+        background-image: url("./hero.png");
+        filter: blur(opx);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        backface-visibility: visible;
+        background-attachment: fixed;
+        z-index: 9;
+        margin-top: 65px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-
-    }
-    #design{
-       width: 100%;
-    }
-    .links{
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        display: none;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-    .hero{
-        margin-top: 500px;
-    }
-    .about{
-        display: flex;
-        flex-direction: column;
-    }
-    #menu{
-        margin-left: 0px;
-        display: block;
-    }
-    .menu-bar{
-        justify-content: flex-start;
         align-items: center;
-    }
-}
-nav{
-    background-color: black;
-    width: 100%;
-    color: white;
-    display: flex;
-    position: fixed;
-    top: 0;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px 0px 20px;
-
-}
-.links{
-    display: flex;
-    padding: 0px 10px 0px 10px;
-}
-.links li{
-    padding: 10px;
-}
-.links li a{
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-.links li a:hover{
-    border-bottom: 2px solid white;
-    padding: 8px;
-    border-radius: 6px;
-    background-color: red;
-}
-.hero{
-    width: 100%;
-    min-height: 400px;
-    background-image: url("https://imagef.promeai.com/imagefilter/gallery/publish/2023/11/27/bb911832d7114450889c510929289fac.jpg?width=500&height=500&fit=contain&format=webp");
-    filter: blur(opx);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    backface-visibility: visible;
-    background-attachment: fixed;
-    z-index: 9;
-    margin-top: 65px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.hero h2, small{
-    font-size: 30px;
-    color: white;
-
-
-}
-#contact-btn{
-    font-size: 20px;
-    padding: 10px;
-    background-color: black;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    
-}
-.contact-button{
-    margin-top: 20px;
-
-}
-.container{
-    width: 100%;
-    display: flex;
-}
-.about-content{
-    background-color: #f7f7f7;
-    margin-left: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-.skill{
-    display: flex;
-    flex-direction: column;
-}
-.html-skill{
-    width: 100%;
-    height: 10px;
-    background-color:#c7bfbf;
-    border-radius: 20px;
-    padding: 0;
-}
-.skill-percentage{
-    width: 90%;
-    height: 100%;
-    margin-left: 0;
-    border-radius: 20px;
-    animation-name: html;
-    animation-duration: 1s;
-    background-color: blue;
-
-}
-.css-percentage{
-    width: 85%;
-    height: 100%;
-    margin-left: 0;
-    border-radius: 20px;
-    animation-name: css;
-    animation-duration: 1s;
-    background-color: blue;
-}
-.java-percentage{
-    width: 80%;
-    height: 100%;
-    margin-left: 0;
-    border-radius: 20px;
-    animation-name: java;
-    animation-duration: 1s;
-    background-color: blue;
-}
-.python-percentage{
-    width: 80%;
-    height: 100%;
-    margin-left: 0;
-    border-radius: 20px;
-    animation-name: python;
-    animation-duration: 1s;
-    background-color: blue;
-}
-@keyframes html{
-       0%{width: 0%;}
-       100%{width:90%}
-}
-@keyframes css{
-       0%{width: 0%;}
-       100%{width:85%}
-}
-@keyframes java{
-       0%{width: 0%;}
-       100%{width:80%}
-}
-@keyframes python{
-       0%{width: 0%;}
-       100%{width:80%}
-}
-.skill h2{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #22fafa;
-}
-.skill h1{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-bottom: 2px solid black;
-}
-.services{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px auto 10px auto;
-    background-color:white;
-    padding: 20px;
-    border-radius: 10px;
-    align-items: center;
-}
-.main-services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.design{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    background-color: #fafafa;
-    margin: 20px;
-    border-radius: 8px;
-    padding: 20px 0px 0px 0px;
-    transition: all 0.6s;
-}
-.design h2{
-    justify-self: flex-end;
-}
-.app{
-    background-color: #22fafa;
-    width: 100%;
-    margin: 10px 0px 0px 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-align: center;
-}
-.design img{
-    align-self: center;
-    justify-self: center;
-}
-.courgette-regular {
-  font-family: "Courgette", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.menu-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#menu{
-    padding: 10px;
-    margin: auto 20px auto 20px;
-    width: 100px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 1s;
-}
-.show{
-    display: none;
-}
-#menu:hover{
-    background-color: rgb(173, 12, 12);
-}
-.about img{
-    transition: all 0.8s;
-}
-.about img:hover{
-    transform: scale(1.2);
-}
-.design:hover{
-    transform: scale(1.05);
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
-footer .contact-section{
-    display: flex;
-    list-style: none;
-}
-footer .contact-section li a{
-    text-decoration: none;
-    color: white;
-    margin: 0px 10px 0px 0px;
-    font-size: 20px;
-    background-color: rgb(60, 60, 198);
-    display: block;
-    width: 100px;
-    text-align: center;
-    padding: 10px 20px 10px 20px;
-    border: none;
-    border-radius: 8px;
-    transition: all 0.5s;
-
-}
-.contact-section a:hover{
-background-color: rgb(132, 132, 227);
-}
-
-
+      }
+      .hero h2,
+      small {
+        font-size: 30px;
+        color: white;
+      }
+      #contact-btn {
+        font-size: 20px;
+        padding: 10px;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+      .contact-button {
+        margin-top: 20px;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+      }
+      .about-content {
+        background-color: #f7f7f7;
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .skill {
+        display: flex;
+        flex-direction: column;
+      }
+      .html-skill {
+        width: 100%;
+        height: 10px;
+        background-color: #c7bfbf;
+        border-radius: 20px;
+        padding: 0;
+      }
+      .skill-percentage {
+        width: 90%;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 20px;
+        animation-name: html;
+        animation-duration: 1s;
+        background-color: blue;
+      }
+      .css-percentage {
+        width: 85%;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 20px;
+        animation-name: css;
+        animation-duration: 1s;
+        background-color: blue;
+      }
+      .java-percentage {
+        width: 80%;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 20px;
+        animation-name: java;
+        animation-duration: 1s;
+        background-color: blue;
+      }
+      .python-percentage {
+        width: 80%;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 20px;
+        animation-name: python;
+        animation-duration: 1s;
+        background-color: blue;
+      }
+      @keyframes html {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 90%;
+        }
+      }
+      @keyframes css {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 85%;
+        }
+      }
+      @keyframes java {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 80%;
+        }
+      }
+      @keyframes python {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 80%;
+        }
+      }
+      .skill h2 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #22fafa;
+      }
+      .skill h1 {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        border-bottom: 2px solid black;
+      }
+      .services {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px auto 10px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+      }
+      .main-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .design {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #fafafa;
+        margin: 20px;
+        border-radius: 8px;
+        padding: 20px 0px 0px 0px;
+        transition: all 0.6s;
+      }
+      .design h2 {
+        justify-self: flex-end;
+      }
+      .app {
+        background-color: #22fafa;
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: center;
+      }
+      .design img {
+        align-self: center;
+        justify-self: center;
+      }
+      .courgette-regular {
+        font-family: "Courgette", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .menu-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #menu {
+        padding: 10px;
+        margin: auto 20px auto 20px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 1s;
+      }
+      .show {
+        display: none;
+      }
+      #menu:hover {
+        background-color: rgb(173, 12, 12);
+      }
+      .about img {
+        transition: all 0.8s;
+      }
+      .about img:hover {
+        transform: scale(1.2);
+      }
+      .design:hover {
+        transform: scale(1.05);
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      footer .contact-section {
+        display: flex;
+        list-style: none;
+      }
+      footer .contact-section li a {
+        text-decoration: none;
+        color: white;
+        margin: 0px 10px 0px 0px;
+        font-size: 20px;
+        background-color: rgb(60, 60, 198);
+        display: block;
+        width: 100px;
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.5s;
+      }
+      .contact-section a:hover {
+        background-color: rgb(132, 132, 227);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="home">
-        <div class="menu-bar">
-             <div><button type="button" id="menu">Menu</button></div>
-            <h1 class="whisper-regular">Indalu Kelbesa</h1>
-        </div>
-        
-        <div class="links" id="link">
-            <li class="menus"><a href="#home">Home</a></li>
-            <li class="menus"><a href="#about-section">About</a></li>
-            <li class="menus"><a href="#services">Services</a></li>
-            <li class="menus"><a href="#contact">Contacts</a></li>
-        </div>
+      <div class="menu-bar">
+        <div><button type="button" id="menu">Menu</button></div>
+        <h1 class="whisper-regular">Indalu Kelbesa</h1>
+      </div>
+
+      <div class="links" id="link">
+        <li class="menus"><a href="#home">Home</a></li>
+        <li class="menus"><a href="#about-section">About</a></li>
+        <li class="menus"><a href="#services">Services</a></li>
+        <li class="menus"><a href="#contact">Contacts</a></li>
+      </div>
     </nav>
     <div class="hero">
-        <h2 class="whisper-regular">I'm Indalu</h2>
-        <small class="whisper-regular">A Web Developer</small>
-        <div class="contact-button">
-            <button id="contact-btn">Contact Me</button>
-        </div>
-        
+      <h2 class="whisper-regular">I'm Indalu</h2>
+      <small class="whisper-regular">A Web Developer</small>
+      <div class="contact-button">
+        <button id="contact-btn">Contact Me</button>
+      </div>
     </div>
     <div class="all-container">
-    <div class="container" id="about-section">
+      <div class="container" id="about-section">
         <div class="skill-section">
-            <div class="about">
-                <img src="Indalu.png" alt="" width="200px" height="200px">
-                <div class="author">
-                    <span><a class="whisper-regular">Indalu</a></span>
-                    <span><a class="whisper-regular">Kelbesa</a></span>
-                </div>
-                <button id="btn">Developer</button>
-    
+          <div class="about">
+            <img src="Indalu.png" alt="" width="200px" height="200px" />
+            <div class="author">
+              <span><a class="whisper-regular">Indalu</a></span>
+              <span><a class="whisper-regular">Kelbesa</a></span>
             </div>
-            <div class="skill">
-                <h1>Skills</h1>
-                <div class="html">
-                    <h2 class="courgette-regular">HTML:5 90%</h2>
-                    <div class="html-skill">
-                        <span class="skill-percentage"></span>
-                    </div>
-                </div>
-                <div class="css">
-                    <h2 class="courgette-regular">CSS 85%</h2>
-                    <div class="html-skill">
-                        <span class="css-percentage"></span>
-                    </div>
-                </div>
-                <div class="java">
-                    <h2 class="courgette-regular">JavaScript 80%</h2>
-                    <div class="html-skill">
-                        <span class="java-percentage"></span>
-                    </div>
-                </div>
-                <div class="python">
-                    <h2 class="courgette-regular">Python 80%</h2>
-                    <div class="html-skill">
-                        <span class="python-percentage"></span>
-                    </div>
-                </div>
+            <button id="btn">Developer</button>
+          </div>
+          <div class="skill">
+            <h1>Skills</h1>
+            <div class="html">
+              <h2 class="courgette-regular">HTML:5 90%</h2>
+              <div class="html-skill">
+                <span class="skill-percentage"></span>
+              </div>
             </div>
+            <div class="css">
+              <h2 class="courgette-regular">CSS 85%</h2>
+              <div class="html-skill">
+                <span class="css-percentage"></span>
+              </div>
+            </div>
+            <div class="java">
+              <h2 class="courgette-regular">JavaScript 80%</h2>
+              <div class="html-skill">
+                <span class="java-percentage"></span>
+              </div>
+            </div>
+            <div class="python">
+              <h2 class="courgette-regular">Python 80%</h2>
+              <div class="html-skill">
+                <span class="python-percentage"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="about-content">
-            <p>My name is Indalu Kelbesa. 
-                I was born in the remote reaches of Ethiopia, 
-                nestled far from the bustle of the capital city,
-                 Addis Ababa. Born into a world where opportunities were scarce, 
-                 but dreams were vast, my journey has been one of unwavering 
-                 determination and resilience.<br><br>From a young age, 
-                 I harbored ambitions far beyond the boundaries of 
-                 my rural upbringing. Despite the challenges of limited 
-                 resources and access to quality education, I committed 
-                 myself to achieving my goals. This determination 
-                 bore fruit when I achieved remarkable success in
-                  the Grade 8 regional examination, a pivotal moment that 
-                  paved the path for my future endeavors.<br><br>
-                 The turning point in my educational journey came with the
-                  opportunity to join the Oromia Development Association (ODA) 
-                  Special Boarding School. It was a steppingstone towards
-                   realizing my potential, providing me with the environment 
-                   and resources necessary to thrive academically. I seized 
-                   this chance with fervor, recognizing it as a gateway to a brighter future.<br><br>
-                 My ascent continued with my outstanding performance in the 
-                 Grade 12 Ethiopian National Examination. Despite the odds 
-                 stacked against me, I emerged triumphant, proving that perseverance and
-                  dedication can overcome any obstacle. My strengths in mathematics and 
-                  problem-solving propelled me forward, laying the groundwork for my future pursuits.
-                 Now I am a web developer, progammer and freelancer. 
-                 </p>
-            <button id="btn-2">Explore My Projects</button>
-        </div>
-        
-    </div>
-    <div class="services" id="services">
-        <h2>SERVICES</h2>
-<div class="main-services">
-    <div class="design" id="design">
-        <div><img src="web-removed.png" alt="" width="100px" height="100px"></div>
-        <div class="app">
-            <h2>WEB DESIGN</h2>
-        </div>
-        
-       
-        <!--web-design services goes here-->
-    </div>
-    <div class="design" id="design">
-        <div><img src="responsive design.webp" alt="" width="100px" height="100px"></div>
-        <div class="app">
-            <h2>RESPONSIVE DESIGN</h2>
-        </div>
-        
-        <!--responsive-design services goes here-->
-    </div>
-    <div class="design" id="design">
-        <div><img src="web-app-removed.png" alt="" width="200px" height="100px"></div>
-        <div class="app">
-            <h2>WEB APPLICATION</h2>
-        </div>
-       
-        <!--web-application services goes here-->
-    </div>
-</div>
-        
-    </div>
-    
-</div>
-<footer id="contact">
-    <h2>CONTACTS</h2>
-    <small style="font-size: 16px; margin-bottom: 20px;">Let's work together!</small>
-    <div class="contact-section">
-        <li><a href="https://www.facebook.com/profile.php?id=100090785490569">Facebook</a></li>
-        <li><a href="https://github.com/Indalu616">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/indalu-kelbesa-106956293/">Linkden</a></li>
-    </div>
-    <hr>
-    <div class="copy">
 
+        <div class="about-content">
+          <p>
+            My name is Indalu Kelbesa. I was born in the remote reaches of
+            Ethiopia, nestled far from the bustle of the capital city, Addis
+            Ababa. Born into a world where opportunities were scarce, but dreams
+            were vast, my journey has been one of unwavering determination and
+            resilience.<br /><br />From a young age, I harbored ambitions far
+            beyond the boundaries of my rural upbringing. Despite the challenges
+            of limited resources and access to quality education, I committed
+            myself to achieving my goals. This determination bore fruit when I
+            achieved remarkable success in the Grade 8 regional examination, a
+            pivotal moment that paved the path for my future endeavors.<br /><br />
+            The turning point in my educational journey came with the
+            opportunity to join the Oromia Development Association (ODA) Special
+            Boarding School. It was a steppingstone towards realizing my
+            potential, providing me with the environment and resources necessary
+            to thrive academically. I seized this chance with fervor,
+            recognizing it as a gateway to a brighter future.<br /><br />
+            My ascent continued with my outstanding performance in the Grade 12
+            Ethiopian National Examination. Despite the odds stacked against me,
+            I emerged triumphant, proving that perseverance and dedication can
+            overcome any obstacle. My strengths in mathematics and
+            problem-solving propelled me forward, laying the groundwork for my
+            future pursuits. Now I am a web developer, progammer and freelancer.
+          </p>
+          <button id="btn-2">Explore My Projects</button>
+        </div>
+      </div>
+      <div class="services" id="services">
+        <h2>SERVICES</h2>
+        <div class="main-services">
+          <div class="design" id="design">
+            <div>
+              <img src="web-removed.png" alt="" width="100px" height="100px" />
+            </div>
+            <div class="app">
+              <h2>WEB DESIGN</h2>
+            </div>
+
+            <!--web-design services goes here-->
+          </div>
+          <div class="design" id="design">
+            <div>
+              <img
+                src="responsive design.webp"
+                alt=""
+                width="100px"
+                height="100px"
+              />
+            </div>
+            <div class="app">
+              <h2>RESPONSIVE DESIGN</h2>
+            </div>
+
+            <!--responsive-design services goes here-->
+          </div>
+          <div class="design" id="design">
+            <div>
+              <img
+                src="web-app-removed.png"
+                alt=""
+                width="200px"
+                height="100px"
+              />
+            </div>
+            <div class="app">
+              <h2>WEB APPLICATION</h2>
+            </div>
+
+            <!--web-application services goes here-->
+          </div>
+        </div>
+      </div>
     </div>
-    
-</footer>
-<script src="react.js"></script>
-</body>
+    <footer id="contact">
+      <h2>CONTACTS</h2>
+      <small style="font-size: 16px; margin-bottom: 20px"
+        >Let's work together!</small
+      >
+      <div class="contact-section">
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100090785490569"
+            >Facebook</a
+          >
+        </li>
+        <li><a href="https://github.com/Indalu616">GitHub</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/indalu-kelbesa-106956293/"
+            >Linkden</a
+          >
+        </li>
+      </div>
+      <hr />
+      <div class="copy"></div>
+    </footer>
+    <script src="react.js"></script>
+  </body>
 </html>
