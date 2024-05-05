@@ -474,4 +474,10 @@ footer .contact-section li a {
     cursor: pointer;
     font-size: 20px;
   }
+  #contact li a{
+    font-size: 15px;
+  }
+  #contact li {
+    text-align: center;
+  }
 }
