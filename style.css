@@ -427,6 +427,12 @@ footer .contact-section li a {
   }
 }
 @media (max-width: 678px) {
+  #contact li a {
+    font-size: 15px;
+  }
+  #contact li {
+    text-align: center;
+  }
   nav {
     padding: 0%;
     height: 50px;
@@ -474,7 +480,7 @@ footer .contact-section li a {
     cursor: pointer;
     font-size: 20px;
   }
-  #contact li a{
+  #contact li a {
     font-size: 15px;
   }
   #contact li {
