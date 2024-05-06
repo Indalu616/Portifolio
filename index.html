@@ -37,18 +37,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="home">
+    <nav id="home" class="section">
       <div class="menu-bar">
         <button id="open-btn"><i class="fa-solid fa-bars"></i></button>
-        <h1 class="whisper-regular">Indalu Kelbesa</h1>
+        <h1>INDALU KELBESA</h1>
       </div>
 
       <div class="links hide-menu" id="link">
         <button id="close-btn">X</button>
-        <li class="menus"><a href="#home">Home</a></li>
-        <li class="menus"><a href="#about-section">About</a></li>
-        <li class="menus"><a href="#services">Services</a></li>
-        <li class="menus"><a href="#contact">Contacts</a></li>
+        <li class="menus"><a href="#home" class="active nav-link">Home</a></li>
+        <li class="menus">
+          <a href="#about-section" class="nav-link">About</a>
+        </li>
+        <li class="menus"><a href="#services" class="nav-link">Services</a></li>
+        <li class="menus"><a href="#contact" class="nav-link">Contacts</a></li>
       </div>
     </nav>
     <div class="hero">
@@ -59,7 +61,7 @@
       </div>
     </div>
     <div class="all-container">
-      <div class="container" id="about-section">
+      <div class="container section" id="about-section">
         <div class="skill-section">
           <div class="about">
             <img src="Indalu.png" alt="" width="200px" height="200px" />
@@ -126,7 +128,7 @@
           <button id="btn-2">Explore My Projects</button>
         </div>
       </div>
-      <div class="services" id="services">
+      <div class="services section" id="services">
         <h2>SERVICES</h2>
         <div class="main-services">
           <div class="design" id="design">
@@ -172,7 +174,7 @@
         </div>
       </div>
     </div>
-    <footer id="contact">
+    <footer id="contact" class="section">
       <h2>CONTACTS</h2>
       <small style="font-size: 16px; margin-bottom: 20px"
         >Let's work together!</small

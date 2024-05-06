@@ -420,10 +420,21 @@ footer .contact-section li a {
   transition: all 0.5s;
 }
 .contact-section a:hover {
-  background-color: rgb(132, 132, 227);
+  background-color: rgb(104, 104, 245);
 }
-
+nav {
+  transition: all 0.5s;
+  background: transparent;
+  color: #08bcbc;
+}
 @media (min-width: 648px) {
+  .links li a{
+    color: #08bcbc;
+  }
+  .hero {
+    margin-top: 0;
+    height: 100vh;
+  }
   #open-btn,
   #close-btn {
     display: none;
@@ -488,4 +499,8 @@ footer .contact-section li a {
   footer {
     padding: 30px;
   }
+}
+/* addition of active class */
+.active {
+  border-bottom: 2px solid white;
 }
