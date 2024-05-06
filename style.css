@@ -397,6 +397,7 @@ footer {
   color: white;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 footer .contact-section {
   display: flex;
