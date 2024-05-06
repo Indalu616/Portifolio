@@ -41,7 +41,7 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 655.2000122070312) {
-    navbar.style.backgroundColor = "black";
+    navbar.style.backgroundColor = "#00008B";
   } else {
     navbar.style.backgroundColor = "transparent";
   }
