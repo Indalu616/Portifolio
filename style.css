@@ -482,4 +482,7 @@ footer .contact-section li a {
   #contact li {
     text-align: center;
   }
+  footer {
+    padding: 30px;
+  }
 }
