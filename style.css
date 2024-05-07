@@ -182,7 +182,6 @@ nav {
   width: 100%;
   min-height: 400px;
   transition: background-image 1s;
-  /* background-image: url("https://i.pinimg.com/originals/01/30/93/0130936b2eea1b178b041251c974c013.jpg"); */
   filter: blur(opx);
   background-repeat: no-repeat;
   background-size: cover;
@@ -504,4 +503,22 @@ nav {
 /* addition of active class */
 .active {
   border-bottom: 2px solid white;
+}
+/* fade in and fadeou effect on hero background */
+
+.hero {
+  opacity: 1;
+  animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
