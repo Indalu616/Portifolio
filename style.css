@@ -181,7 +181,7 @@ nav {
 .hero {
   width: 100%;
   min-height: 400px;
-  transition: all 0.6s;
+  transition: background-image 1s;
   /* background-image: url("https://i.pinimg.com/originals/01/30/93/0130936b2eea1b178b041251c974c013.jpg"); */
   filter: blur(opx);
   background-repeat: no-repeat;
