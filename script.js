@@ -110,3 +110,11 @@ function resetIndex() {
   setInterval(changeBg, 5000);
 }
 resetIndex();
+
+// adding loading effect before the content loads
+
+const loader = document.getElementById("loader");
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
