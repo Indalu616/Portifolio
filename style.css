@@ -173,21 +173,23 @@ nav {
   transition: all 0.5s;
 }
 .links li a:hover {
-  border-bottom: 2px solid white;
-  padding: 8px;
+  /* border-bottom: 2px solid white; */
+  transform: scale(1.2);
   border-radius: 6px;
-  background-color: red;
+  color: rgb(241, 121, 121);
+  /* background-color: red; */
 }
 .hero {
   width: 100%;
   min-height: 400px;
+  background-image: url("https://img95.lovepik.com/photo/40110/2065.gif_wh860.gif");
   transition: background-image 1s;
-  filter: blur(opx);
+  /* filter: blur(opx); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-origin: border-box;
-  backface-visibility: visible;
+  /* backface-visibility: visible; */
   background-attachment: fixed;
   z-index: 9;
   margin-top: 65px;
@@ -198,17 +200,31 @@ nav {
 }
 .hero h2,
 small {
+  text-transform: capitalize;
+  font-family: "outfit";
   font-size: 30px;
   color: white;
 }
+small {
+  color: rgb(201, 14, 201);
+}
 #contact-btn {
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
-  background-color: black;
+  background-color: rgb(27, 27, 236);
   border: none;
   border-radius: 10px;
   color: white;
   cursor: pointer;
+  transition: all 0.5s;
+}
+#contact-btn a {
+  text-decoration: none;
+  color: white;
+}
+#contact-btn:hover {
+  background-color: rgb(85, 85, 241);
+  font-size: 13px;
 }
 .contact-button {
   margin-top: 20px;
@@ -506,12 +522,12 @@ nav {
 }
 /* fade in and fadeou effect on hero background */
 
-.hero {
+/* .hero {
   opacity: 1;
   animation: fade 5s linear infinite;
-}
+} */
 
-@keyframes fade {
+/* @keyframes fade {
   0% {
     opacity: 0;
   }
@@ -521,7 +537,7 @@ nav {
   50% {
     opacity: 0.5;
   }
-}
+} */
 /* loading effect on body  */
 .loading {
   position: absolute;
